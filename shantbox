@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Remove "waitforexitandrun" from arguments
+shift
+# Run command
+"$@"

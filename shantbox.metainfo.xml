@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.valvesoftware.Steam.CompatibilityTool.shantbox</id>
+
+  <name>Shantbox</name>
+  <summary>Run steam apps outside of pressure-vessel</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <extends>
+    <id>com.valvesoftware.Steam</id>
+  </extends>
+
+  <description>
+    <p>
+      Steam compatibility tool to run apps outside of pressure-vessel. This is unsafe, don't use it.
+    </p>
+  </description>
+
+  <url type="homepage">https://github.com/ColinKinloch/com.valvesoftware.Steam.CompatibilityTool.shantbox</url>
+
+  <releases>
+    <release version="1.0.0" date="2025-02-09">
+      <description></description>
+    </release>
+  </releases>
+</component>

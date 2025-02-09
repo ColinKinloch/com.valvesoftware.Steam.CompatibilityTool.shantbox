@@ -1,0 +1,15 @@
+"compatibilitytools"
+{
+  "compat_tools"
+  {
+    "Shantbox"
+    {
+      "install_path" "."
+
+      "display_name" "Shantbox (Unsafe)"
+
+      "from_oslist"  "linux"
+      "to_oslist"    "linux"
+    }
+  }
+}

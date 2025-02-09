@@ -1,0 +1,21 @@
+id: com.valvesoftware.Steam.CompatibilityTool.Shantbox
+default-branch: stable
+runtime: com.valvesoftware.Steam
+runtime-version: stable
+sdk: org.freedesktop.Sdk//24.08
+build-extension: true
+modules:
+  - name: shantbox
+    buildsystem: simple
+    sources:
+      - type: file
+        path: shantbox
+      - type: file
+        path: toolmanifest.vdf
+      - type: file
+        path: compatibilitytool.vdf
+      - type: file
+        path: shantbox.metainfo.xml
+    build-commands:
+      - mv shantbox toolmanifest.vdf compatibilitytool.vdf /app/share/steam/compatibilitytools.d/Shantbox
+      - install -Dm644 -T shantbox.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
